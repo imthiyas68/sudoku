@@ -1,0 +1,39 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* src/index.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.sudoku-board {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 1px;
+}
+
+.sudoku-row {
+  display: contents;
+}
+
+.sudoku-cell {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  font-size: 20px;
+  background-color: #fff;
+}

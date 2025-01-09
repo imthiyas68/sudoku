@@ -1,0 +1,145 @@
+/* src/styles/main.css */
+.board-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.game-board {
+    display: grid;
+    background: #000;
+    padding: 2px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cell {
+    background: #fff;
+    border: 1px solid #ddd;
+    transition: all 0.2s ease;
+}
+
+.cell.initial {
+    background: #f8f9fa;
+}
+
+.cell.selected {
+    background: #e3f2fd;
+}
+
+.cell:hover:not(.initial) {
+    background: #f1f8ff;
+}
+
+.number-input {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    max-width: 200px;
+}
+
+.number-input button {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.number-input button:disabled {
+    background: #f5f5f5;
+    cursor: not-allowed;
+}
+
+.timer {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    padding: 10px;
+    background: #f8f9fa;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.score-board {
+    background: #fff;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.player-score {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.leader-board {
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.score-entry {
+    display: grid;
+    grid-template-columns: 30px 1fr auto;
+    gap: 10px;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.admin-dashboard {
+    padding: 20px;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.game-settings {
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.settings-grid {
+    display: grid;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.certificate-manager {
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.template-upload {
+    display: grid;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.templates-list {
+    margin-top: 20px;
+}
+
+.template-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
